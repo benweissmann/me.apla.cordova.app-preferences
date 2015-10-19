@@ -9,8 +9,8 @@ module.exports = function (context) {
     return settings.get()
 		.catch(function(err) {
 			if (err.code === 'NEXIST') {
-				console.log("app-settings.json not found: creating a sample file");
-				return settings.create();
+				console.log("app-settings.json not found: ignoring");
+				return [];
 			}
 			
 			throw err;
