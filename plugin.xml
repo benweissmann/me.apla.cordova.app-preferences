@@ -12,10 +12,10 @@
 	<repo>https://github.com/apla/me.apla.cordova.app-preferences</repo>
 	<issue>https://github.com/apla/me.apla.cordova.app-preferences/issues</issue>
 
-	<js-module src="www/apppreferences.js">
+	<js-module src="www/apppreferences.js" name="apppreferences">
 		<clobbers target="plugins.appPreferences" />
 	</js-module>
-	<js-module src="src/platform.js">
+	<js-module src="src/platform.js" name="platform">
 	</js-module>
 
 	<asset src="www/task/AppPreferences.js" target="task/AppPreferences.js" />
